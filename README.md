@@ -16,6 +16,10 @@ Potential Proposals:
         - e.g. agentic workflow in github analysis, extending text-to-sql for agents/data agents, collecting new data/analyzing data, using agents for encoding, labelling, automatic analysis, new insights, multimodality extensions, long horizon extensions, reasoning & explainability, reducing hallucinations
         - take inspiration from papers already presented
 
+        1. look at papers, identify interesting dimensions
+        2. look at my own applications (daily tools, tacit knowledge, personal needs), use tools to improve workflow, start with my own requirements
+        3. find problems in other people's current ongoing work
+
 ## Pretraining-side:
     - Seed-variance-aware speedrun ablation: take a few nanoGPT speedrun optimizations and re-run with n>=5 seeds at fixed budget, report effect sizes with CIs. My guess is a chunk of the "gains" are noise, and proving that is a real contribution you can finish on one GPU.
     - One-variable scale test (tokenizer, or dedup ratio, or data order) at ~10M params, 3 seeds. Question: does the effect survive small scale, or is it a big-model artifact?
